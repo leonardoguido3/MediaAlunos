@@ -46,14 +46,14 @@ namespace CalculoMedia.Entidades
             while (contador < quantidadeAlunos)
             {
                 Console.Clear();
-                Console.Write("\nEscreva a nota do aluno " + contador + ": ");
+                Console.Write($"\nEscreva a nota do aluno  {contador + 1}: ");
                 notaAluno = Convert.ToDouble(Console.ReadLine());
                 total += notaAluno;
                 contador++;
             }
 
             double media = (total / quantidadeAlunos);
-            Console.WriteLine("\nA média da turma foi de: " + media);
+            Console.WriteLine($"\nA média da turma foi de:  {media.ToString("C2")}");
         }
     }
 }
